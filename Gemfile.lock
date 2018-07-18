@@ -1,0 +1,41 @@
+PATH
+  remote: .
+  specs:
+    deepselect (0.0.1)
+      menoh
+      rmagick
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    diff-lcs (1.3)
+    menoh (1.0.0)
+    rake (10.5.0)
+    rmagick (2.16.0)
+    rspec (3.7.0)
+      rspec-core (~> 3.7.0)
+      rspec-expectations (~> 3.7.0)
+      rspec-mocks (~> 3.7.0)
+    rspec-core (3.7.1)
+      rspec-support (~> 3.7.0)
+    rspec-expectations (3.7.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.7.0)
+    rspec-mocks (3.7.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.7.0)
+    rspec-support (3.7.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  bundler (~> 1.16)
+  deepselect!
+  menoh (~> 1.0)
+  rake (~> 10.0)
+  rmagick (~> 2.16)
+  rspec (~> 3.0)
+
+BUNDLED WITH
+   1.16.1

@@ -6,11 +6,6 @@ This library makes it easy to search for images.
 deepselectはDeepLearningを使ったRubyの画像認識ライブラリです。
 簡単に画像検索ができます。
 
-## Installation
-install the gem:
-```
-gem install deepselect
-```
 
 ## Synopsis
 
@@ -55,6 +50,10 @@ As an example, when outputting two images with similarity:
 stmark_photo_image = Magick::Image.read("./images/photo_stmarc.jpg").first
 selected_image = images.dselect(take: 2, with: "similarity"){|dimage| dimage == stmark_photo_image}
 p selected_image
+# => [
+#       [./images/logo_stmarc.png PNG 542x542 542x542+0+0 DirectClass 8-bit 372kb,  0.9097266348649801],
+#       [./images/logo_tully's.jpg JPEG 667x666 667x666+0+0 DirectClass 8-bit 72kb, 0.6602779726625289]
+# ]
 ```
 
 #### Cache
@@ -66,7 +65,12 @@ images.dinit # calc feature vector
 selected_image = images.dselect{|dimage| dimage == compare_image}
 ```
 
-## Requirements
+## Installation
+install the gem:
+```
+gem install deepselect
+```
+
 **deepselect requires installation of Menoh and imagemagick.**<br>
 Please check [the page of github Menoh](https://github.com/pfnet-research/menoh) for installation Menoh.
 
